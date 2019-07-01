@@ -1,0 +1,22 @@
+body {
+	background-color: bisque;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.wrapper h1, h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.wrapper p {
+	text-align: center;
+}
+
+
+
+form {
+	display: block;
+	margin: 0 auto;
+	width: calc(100% - 670px);
+}

@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title="Logged with Google Account"
+        style
+            include ./bootstrap.min.css
+            include ./style.css
+    body
+        div.container
+            div.row
+                div.col-xs-12.col-md-12.mt-4
+                    div.wrapper
+                        h1 Hi, #{user.displayName}
+                         h2 My email is : #{user.emails}
+                        p You are logged with your Google Account

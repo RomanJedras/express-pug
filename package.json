@@ -1,0 +1,50 @@
+{
+  "name": "expressjs-pug",
+  "version": "1.0.0",
+  "description": "\"# expressjs\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init-project": "npm install && npm-run-all init:*",
+    "init:dirs": "mkdirp sass css vendor images js",
+    "init:files": "touch README.md index.html sass/style.scss js/script.js",
+    "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
+    "start": "babel app.js --watch --out-file ./js/script-compiled.js",
+    "start:dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomanJedras/express-pug.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomanJedras/express-pug.git/issues"
+  },
+  "homepage": "https://github.com/RomanJedras/express-pug.git#readme",
+  "dependencies": {
+    "babel-plugin-generator-prettier": "^1.1.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "morgan": "^1.9.1",
+    "prettier": "^1.18.2",
+    "prettierrc": "0.0.0",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "express": "^4.17.1",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^2.0.0"
+  }
+}
