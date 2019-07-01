@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        title=title
+        style
+            include ./bootstrap.min.css
+            include ./style.css
+
+    body
+        div.container
+            div.row
+             div.col-xs-12.col-md-12
+                div.wrapper
+                 h1  #{h1.content}
+
+                form(action=action,method=method)
+                    p First Name:
+                        input(type=type,name=user.firstName)
+                    p   Last Name:
+                        input(type=type,name=user.lastName)
+                    input(type="submit", value="Submit" class="btn btn-default")

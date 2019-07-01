@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    head
+        title=title
+        style
+            include ./bootstrap.min.css
+            include ./style.css
+
+    body
+        div.container
+            div.row
+                div.col-xs-12.col-md-12
+                    div.wrapper.mt-3
+                        h1 Hi, #{user.first_name} #{user.last_name}
+                        p You are logged with your Google Account
